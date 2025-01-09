@@ -1,22 +1,22 @@
-@import: "main.less";
+@import "mapas.less";
 
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width:768px) and (max-width: 1023px)";
 
 body {
     font-family: Poppins, serif;
-    background-color: #Colors[corVerde];
+    background-color: @corVerde;
     box-sizing: border-box;
 }
 header {
-    color:#Colors[corBranca];
-    background-color:#Colors[corPreta];
+    color:@corBranca;
+    background-color:@corPreta;
 
     .nav-link {
-        color:#Colors[corBranca];
+        color:@corBranca;
 
         &:hover {
-            color: #Colors[corVerde];
+            color: @corVerde;
         }
     }
 }
@@ -40,14 +40,14 @@ header {
 .products {
     h4 { margin-top: 16px;}
     a{ 
-        color:#Colors[corBranca];
-        background-color:#Colors[corPreta];
+        color:@corBranca;
+        background-color:@corPreta;
         padding: 10px;
         border-radius: 10px;
             
             &:hover{
-                color:#Colors[corPreta];
-                background-color: #Colors[corBranca];
+                color:@corPreta;
+                background-color: @corBranca;
             }
         }
         img {
